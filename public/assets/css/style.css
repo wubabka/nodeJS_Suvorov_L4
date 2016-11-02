@@ -1,0 +1,49 @@
+ul {
+    list-style:none;
+    padding: 0;
+}
+
+.navbar-default {
+    background-color:firebrick;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color:fuchsia;
+}
+
+body {
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+a {
+    color: darkviolet;
+}
+
+.form-control {
+    background-color: deepskyblue;
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    width: 50%;
+    border-radius: .5em;
+    box-shadow: .2em .2em .3em .05em firebrick;
+    margin-bottom: .5em;
+}
+
+.btn {
+    border-radius: .8em;
+    box-shadow: .1em .1em .3em .05em;
+    margin-left: 2.2em;
+}
+
+.btn:hover {
+    background-color: green;
+}

@@ -1,0 +1,27 @@
+extends ./layout
+
+block content
+    .row
+        .col-xs-12.col-md-6.col-md-offset-3
+            if (sites == 'macdigger.ru' || sites == 'все')
+                .row
+                    .col-xs-12
+                        h2 macdigger.ru
+                    .col-xs-12
+                        ul
+                            each val in data.mac.slice(0, news)
+                                li
+                                    a(href='http://www.macdigger.ru/')
+                                        h4= val.title
+                                    p= val.content
+            if (sites == 'css-tricks.com' || sites == 'все')
+                .row
+                    .col-xs-12
+                        h2 css-tricks.com
+                    .col-xs-12
+                        ul
+                            each val in data.tricks.slice(0, news)
+                                li
+                                    a(href='https://css-tricks.com/')
+                                        h4= val.title
+                                    p= val.content
